@@ -47,9 +47,11 @@ header {
 /* DP Info (Price & Buy Section) */
 .dp-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* এক লাইনে Price & Buy রাখার জন্য */
     align-items: center;
+    gap: 10px; /* Price & Buy বাটনের মধ্যে গ্যাপ */
     margin-left: 20px; /* DP-এর ডান পাশে গ্যাপ রাখার জন্য */
+    white-space: nowrap; /* Price ঠিকভাবে দেখানোর জন্য */
 }
 
 /* Price Text */
@@ -57,7 +59,6 @@ header {
     color: white; /* প্রাইস টেক্সট সাদা */
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 /* Buy Button */
