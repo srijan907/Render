@@ -23,12 +23,12 @@ header {
     padding: 20px;
 }
 
-/* DP Item Styling */
+/* DP Item Styling (পুরো ব্যাকগ্রাউন্ড কালো) */
 .dp-item {
     display: flex;
+    flex-direction: column; /* উপরে-নিচে করে দিলাম */
     align-items: center;
-    justify-content: space-between;
-    background: #000000; /* ডিপ ব্ল্যাক ব্যাকগ্রাউন্ড */
+    background: #000000; /* পুরো div এর ব্যাকগ্রাউন্ড কালো */
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
@@ -42,7 +42,7 @@ header {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-bottom: 10px; /* নিচের অংশের সাথে গ্যাপ রাখার জন্য */
 }
 
 /* DP Info (Price Text) */
@@ -50,6 +50,7 @@ header {
     color: white; /* প্রাইস টেক্সট সাদা */
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Buy Button */
