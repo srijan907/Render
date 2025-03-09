@@ -23,12 +23,12 @@ header {
     padding: 20px;
 }
 
-/* DP Item Styling (পুরো ব্যাকগ্রাউন্ড কালো) */
+/* DP Item Styling */
 .dp-item {
-    display: flex;
-    flex-direction: column; /* উপরে-নিচে করে দিলাম */
+    display: flex; /* DP এবং Price+Buy বাটন এক লাইনে আনতে */
     align-items: center;
-    background: #000000; /* পুরো div এর ব্যাকগ্রাউন্ড কালো */
+    justify-content: space-between;
+    background: #000000; /* ডিপ ব্ল্যাক ব্যাকগ্রাউন্ড */
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
@@ -38,15 +38,22 @@ header {
 
 /* DP Image */
 .dp-item img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 10px; /* নিচের অংশের সাথে গ্যাপ রাখার জন্য */
 }
 
-/* DP Info (Price Text) */
+/* DP Info (Price & Buy Section) */
 .dp-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px; /* DP-এর ডান পাশে গ্যাপ রাখার জন্য */
+}
+
+/* Price Text */
+.dp-info .price {
     color: white; /* প্রাইস টেক্সট সাদা */
     font-size: 18px;
     font-weight: bold;
