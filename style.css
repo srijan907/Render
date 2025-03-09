@@ -23,14 +23,16 @@ h1 {
 }
 
 .dp-item {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 450px; /* DP Box Width Increased */
     display: flex;
     align-items: center;
+    background: #000000; /* একদম ডিপ ব্ল্যাক কালার */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: none;
+    width: 60%;
 }
+
 
 .dp-item img {
     width: 180px; /* DP Size Increased */
