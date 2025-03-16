@@ -3,39 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DP Store</title>
+    <title>Session ID Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>DP Store</h1>
-
-        <div class="dp-list">
-            <!-- DP Items -->
-            <script>
-                let dpData = [
-                    { img: "https://cdn.ironman.my.id/i/vzry3x.jpg", price: "100", link: "https://wa.me/YOUR_WHATSAPP_NUMBER?text=I%20want%20to%20buy%20DP%201" },
-                    { img: "https://cdn.ironman.my.id/i/vzry3x.jpg", price: "120", link: "https://wa.me/YOUR_WHATSAPP_NUMBER?text=I%20want%20to%20buy%20DP%202" },
-                    { img: "https://cdn.ironman.my.id/i/vzry3x.jpg", price: "150", link: "https://wa.me/YOUR_WHATSAPP_NUMBER?text=I%20want%20to%20buy%20DP%203" },
-                    // আরও DP লিস্ট যোগ করুন
-                ];
-
-                dpData.forEach((dp, index) => {
-                    document.write(`
-                        <div class="dp-item">
-                            <img src="${dp.img}" alt="DP ${index + 1}">
-                            <div class="dp-info">
-                                <p>Price: ${dp.price} BDT</p>
-                                <a href="${dp.link}" class="buy-btn">Buy</a>
-                            </div>
-                        </div>
-                    `);
-                });
-            </script>
+        <h2>First, scan and get your session ID. Then, deploy on any platform as you like.</h2>
+        <button id="scanBtn">SCAN</button>
+        <button id="deployBtn">DEPLOY</button>
+        <p>Support the Developer</p>
+        <div class="links">
+            <a href="#">PLUGINS</a>
+            <a href="#">ENV VARS</a>
+            <a href="#">FAQ</a>
+            <a href="#">SUGGESTIONS</a>
+            <a href="#">TELEGRAM GROUP</a>
         </div>
-
+        <div class="github">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+            <span>Stars 969</span>
+        </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
