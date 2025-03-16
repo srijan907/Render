@@ -1,79 +1,37 @@
-/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background: url('https://your-background-image-url.com') no-repeat center center/cover;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header Styling */
-header {
-    background: rgba(0, 0, 0, 0.7);
+    background-color: black;
     color: white;
-    padding: 20px;
-    font-size: 24px;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-/* DP Container */
-.dp-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+h2 {
+    color: lightblue;
 }
 
-/* DP Item Styling */
-.dp-item {
-    display: flex; /* DP এবং Price+Buy বাটন এক লাইনে আনতে */
-    align-items: center;
-    justify-content: space-between;
-    background: #000000; /* ডিপ ব্ল্যাক ব্যাকগ্রাউন্ড */
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 60%;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* হালকা ছায়া */
-}
-
-/* DP Image */
-.dp-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* DP Info (Price & Buy Section) */
-.dp-info {
-    display: flex;
-    flex-direction: row; /* এক লাইনে Price & Buy রাখার জন্য */
-    align-items: center;
-    gap: 10px; /* Price & Buy বাটনের মধ্যে গ্যাপ */
-    margin-left: 20px; /* DP-এর ডান পাশে গ্যাপ রাখার জন্য */
-    white-space: nowrap; /* Price ঠিকভাবে দেখানোর জন্য */
-}
-
-/* Price Text */
-.dp-info .price {
-    color: white; /* প্রাইস টেক্সট সাদা */
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Buy Button */
-.buy-btn {
-    background: #ffcc00; /* উজ্জ্বল হলুদ বাটন */
+button {
+    background-color: orange;
     color: black;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin: 10px;
 }
 
-/* Buy Button Hover Effect */
-.buy-btn:hover {
-    background: #ffa500; /* কমলা শেড */
+.links a {
+    color: orange;
+    margin: 5px;
+    display: inline-block;
+}
+
+.github {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github img {
+    width: 20px;
+    margin-right: 10px;
 }
